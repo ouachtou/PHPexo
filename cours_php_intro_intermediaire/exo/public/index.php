@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
-require_once 'public/src/db.php'
+require_once __DIR__.'/../src/db.php';
+connectToDbAndPOSTPdo();
 ?>
 <html lang="fr">
 <head>
