@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-    require_once 'public/src/db.php';
-   ?>
+require_once 'public/src/db.php'
+?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -54,12 +54,6 @@
 <form action="#" method="post">
     <label for="nom">Nom :</label>
     <input type="text" id="nom" name="nom" required>
-
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom" required>
-
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
 
     <label for="mot_de_passe">Mot de passe :</label>
     <input type="password" id="mot_de_passe" name="mot_de_passe" required>
