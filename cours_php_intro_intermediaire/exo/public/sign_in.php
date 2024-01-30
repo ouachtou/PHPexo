@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <?php
 require_once __DIR__.'/../src/db.php';
+
 $pdo = connectToDbAndPOSTPdo();
 
 if (isset($_POST['nom']) && isset($_POST['mot_de_passe'])) {
-    inserUsers($_POST['mot_de_passe'],$_POST['nom']);
-    
+    connexionUsers($_POST['mot_de_passe'],$_POST['nom']);
 }
 ?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire d'inscription</title>
+    <title>Formulaire de connexion</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -64,8 +64,8 @@ if (isset($_POST['nom']) && isset($_POST['mot_de_passe'])) {
     <label for="mot_de_passe">Mot de passe :</label>
     <input type="password" id="mot_de_passe" name="mot_de_passe" required>
 
-    <button type="submit">S'inscrire</button>
-    <a href="sign_in.php">Se connecter</a>
+    <button type="submit">Se connecter</button>
+    <a href="index.php">S'inscrire</a>
 </form>
 
 </body>
